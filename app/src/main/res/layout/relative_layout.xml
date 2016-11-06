@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+   >
+
+    <TextView android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trouvez l'intrus"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView android:id="@+id/objet"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Objets:"
+    android:textSize="16sp"
+    android:layout_marginTop="35dp"
+    android:layout_below="@+id/label"
+    android:layout_alignParentStart="true" />
+
+    <ImageView android:id="@+id/bus"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bus"
+        android:clickable="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageView android:id="@+id/avion"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/airplane"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="150dp"
+        />
+
+    <ImageView android:id="@+id/moto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bike"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="210dp"
+        />
+
+    <ImageView android:id="@+id/ambulance"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ambulance"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="280dp"
+        />
+
+   <TextView android:id="@+id/couleur"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Couleur:"
+         android:textSize="16sp"
+       android:layout_alignBottom="@+id/Red"
+       android:layout_alignParentStart="true" />
+
+   <TextView
+         android:id="@+id/Red"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="80dp"
+         android:layout_marginTop="110dp"
+         android:height="50px"
+         android:width="50px" />
+
+
+     <TextView
+         android:id="@+id/Orange"
+         android:text="Bite"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="110dp"
+         android:layout_marginTop="110dp"
+         android:height="50px"
+         android:width="50px"
+         android:background="#FFA500"   />
+
+     <TextView  android:id="@+id/Yellow"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="140dp"
+         android:layout_marginTop="110dp"
+         android:height="50px"
+         android:width="50px"
+         android:background="#FFFF00" />
+
+     <TextView android:id="@+id/Green"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="170dp"
+         android:layout_marginTop="110dp"
+         android:height="50px"
+         android:width="50px"
+         android:background="#00F662" />
+
+     <TextView android:id="@+id/Blue"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="200dp"
+         android:layout_marginTop="110dp"
+         android:height="50px"
+         android:width="50px"
+         android:background="#1000F6" />
+
+     <TextView android:id="@+id/Purple"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="230dp"
+         android:layout_marginTop="110dp"
+         android:height="50px"
+         android:width="50px"
+         android:background="#9A00F3" />
+
+     <TextView android:id="@+id/Pink"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_marginLeft="260dp"
+         android:layout_marginTop="110dp"
+         android:height="50px"
+         android:width="50px"
+         android:background="#EE82EE" />
+
+   <TextView android:id="@+id/nombre"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Nombre d'occurence:"
+         android:textSize="16sp"
+       android:layout_marginTop="75dp"
+       android:layout_alignTop="@+id/numberPicker1"
+       android:layout_alignParentStart="true" />
+
+    <TextView android:id="@+id/vitesse"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Vitesse:"
+         android:textSize="16sp"
+       android:layout_alignParentStart="true"
+       android:layout_below="@+id/numberPicker1" />
+
+    <Button android:id="@+id/bouton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Jouer"
+        android:onClick="Jouer"
+        android:layout_below="@+id/vitesse"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <SeekBar
+        android:id="@+id/sbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/vitesse"/>
+
+    <NumberPicker
+          android:id="@+id/numberPicker1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/Yellow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        />
+
+
+</RelativeLayout>
